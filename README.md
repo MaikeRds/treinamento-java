@@ -43,7 +43,7 @@ sdk list java
 Use o identificador para instalação:
 
 ```bash
-sdk install java 11.0.3.hs-adpt
+sdk install java 11.0.12-zulu
 ```
 
 Você ainda pode baixar o Oracle JDK e extraí-lo manualmente na pasta apropriada. Depois disso, você pode usar todos os comandos sdkman como se ele fosse instalado automaticamente.
