@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'checkstyle'
+    id 'pmd'
 }
 
 group 'com.primeiro-projeto'
@@ -18,4 +20,17 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+checkstyle {
+    toolVersion = '8.45'
+    showViolations = true
+    configFile = file("config/checkstyle/checkstyle.xml")
+}
+
+pmd {
+    ruleSetFiles = files("config/pmd/ruleset.xml")
+    toolVersion = '6.37.0'
+    ignoreFailures = true
+    consoleOutput = true
 }

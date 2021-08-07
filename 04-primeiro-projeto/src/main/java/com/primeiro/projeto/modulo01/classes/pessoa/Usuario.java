@@ -1,7 +1,7 @@
 package com.primeiro.projeto.modulo01.classes.pessoa;
 
 
-import com.primeiro.projeto.classes.usuario.SuperUsuario;
+import com.primeiro.projeto.modulo01.classes.usuario.SuperUsuario;
 
 public class Usuario extends SuperUsuario {
 
