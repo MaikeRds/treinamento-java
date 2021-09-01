@@ -22,7 +22,7 @@ public class ClientHttpExemplo {
     });
 
     public static void main(String[] args) throws Exception {
-        connectAkamaiHttp2Client();
+        connectAkamaiHttp11Client();
     }
 
 
