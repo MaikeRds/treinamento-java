@@ -58,5 +58,9 @@ Exemplo básico sobre JDBC
 No gradle deve-se adicionar no "build.gradle" (na parte de "dependencies") a linha abaixo
 
 ```groovy
-compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+...
+
+dependencies {
+   implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.14'
+}
 ```
