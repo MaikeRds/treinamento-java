@@ -58,8 +58,6 @@ Exemplo básico sobre JDBC
 No gradle deve-se adicionar no "build.gradle" (na parte de "dependencies") a linha abaixo
 
 ```groovy
-...
-
 dependencies {
    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.14'
 }
