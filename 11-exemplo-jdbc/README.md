@@ -25,12 +25,12 @@ Exemplo básico sobre JDBC
 2. Acessar banco de dados.
 
     ```text
-    env.postgres.driver = postgresql
-    env.postgres.host = 127.0.0.1
-    env.postgres.port = 5432
-    env.postgres.user = treinamento
-    env.postgres.password = treinamento
-    env.postgres.db = treinamento
+   db.postgres.driver=postgresql
+   db.postgres.address=127.0.0.1
+   db.postgres.port=5432
+   db.postgres.user.login=treinamento
+   db.postgres.user.password=treinamento
+   db.postgres.dbname=treinamento
     ```
 
 3. Criar uma tabela no banco de dados
