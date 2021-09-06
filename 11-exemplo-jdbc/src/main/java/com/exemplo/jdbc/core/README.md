@@ -3,7 +3,7 @@
 Existem 3 interfaces para montar comandos SQL:
 
 - **Statement** - Executar SQL comuns
-- **PreparedStatement** - Executar SQL paraentrizáveis
+- **PreparedStatement** - Executar SQL paramentrizáveis
 - **CallableStatement** - Executar stored procedures
 
 ## PreparedStatement 
