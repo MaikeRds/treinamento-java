@@ -22,7 +22,7 @@ public class ConnectionJDBC {
                 .append(dataBaseAddress).append("/")
                 .append(dataBaseName);
 
-        String connectionUrl = sb.toString(); //sb.toString() == "jdbc:postgres://localhost/treinamento"
+        String connectionUrl = sb.toString(); //sb.toString() == "jdbc:postgresql://localhost/treinamento"
 
         //Carregar a classe específica de implementação do driver na memória da JVM. (A partir da versão JDBC 4 não é mais necessário!!!)
         //Class.forName("com.postgres.jdbc.Driver");

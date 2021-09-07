@@ -1,0 +1,40 @@
+/* groovylint-disable-next-line CompileStatic */
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    // Notar que essa API nao faz o programa rodar, apenas valida as annotations (pois sao so as especificacoes)
+    // https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
+    implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+
+    // Drive JDBC que sera utilizado pelos frameworks que implementam o JPA
+    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.14'
+
+    // Implementacao Hibernate
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.12.Final'
+
+    // Implementacao EclipseLink
+    // https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink
+    //implementation group: 'org.eclipse.persistence', name: 'eclipselink', version: '2.7.6'
+
+    // Automatizador de criacao de Metamodels
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-jpamodelgen
+    annotationProcessor('org.hibernate:hibernate-jpamodelgen:5.4.13.Final')
+}
+
+test {
+    useJUnitPlatform()
+}
